@@ -26,8 +26,4 @@ console.log(m.score());
 m.pointWonBy("player One");
 console.log(m.score());
 
-
-// Test Number 6
-m.pointWonBy("player One");
-
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
