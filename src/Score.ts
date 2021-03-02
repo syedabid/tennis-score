@@ -16,7 +16,7 @@ export class Score {
 
     private static WIN = "Win";
     private static ADVANTAGE = "Advantage #playerName";
-    private static DEDUCE = "Deuce";
+    private static DEUCE = "Deuce";
 
     constructor(playerOnePoint: number, playerTwoPoint: number, playerOneName: string, playerTwoName: string) {
         this.playerOnePoint = playerOnePoint;
@@ -26,17 +26,17 @@ export class Score {
     }
 
     public calculate(): string {
-        if (this.playerOnePoint === this.playerTwoPoint) return this.deduce(this.playerOnePoint);
+        if (this.playerOnePoint === this.playerTwoPoint) return this.deuce(this.playerOnePoint);
         if (this.playerOnePoint > 3 || this.playerTwoPoint > 3) return this.winOrTie();
         return this.defaultScore();
     }
 
 
-    public deduce(playerOnePoint: number): string {
+    public deuce(playerOnePoint: number): string {
         if (playerOnePoint < 3) {
             return "0-0, " + Score.defaultScores[playerOnePoint] + " - " + Score.defaultScores[playerOnePoint];
         }
-        return "0-0, " + Score.DEDUCE;
+        return "0-0, " + Score.DEUCE;
     }
 
 

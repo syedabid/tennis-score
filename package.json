@@ -1,5 +1,5 @@
 {
-  "name": "tennis",
+  "name": "tennis-score",
   "version": "1.0.0",
   "description": "Basic tennis score calculator",
   "main": "index.js",

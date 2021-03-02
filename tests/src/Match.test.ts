@@ -60,7 +60,7 @@ describe('Match', () => {
         });
 
 
-        it("should return the score string '0-0, Advantage Player 1'", () => {
+        it("should return the score string '1 - 0'", () => {
             match.pointWonBy("player 1");
             match.pointWonBy("player 2");
 

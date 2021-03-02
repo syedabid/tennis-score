@@ -23,8 +23,6 @@ export class Match {
         let point = gamePlayer.getPlayerGamePoint;
         point += 1;
         gamePlayer.setPlayerGamePoints = point;
-        gamePlayer.setPlayerGamePoints;
-        
       }else{
         throw new Error("Sorry cannot find the player");
       }

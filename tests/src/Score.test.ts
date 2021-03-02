@@ -19,10 +19,10 @@ describe('Score', () => {
     });
   });
 
-  describe("deduce", () =>{
-    it("should return the score as deduce", () => {
+  describe("deuce", () =>{
+    it("should return the score as deuce", () => {
         score = new Score(3, 3, matchPlayers[0].getPlayerName, matchPlayers[1].getPlayerName);
-        expect(score.deduce(3)).toBe("0-0, Deuce");
+        expect(score.deuce(3)).toBe("0-0, Deuce");
     });
   });
 
